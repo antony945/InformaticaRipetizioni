@@ -13,15 +13,12 @@ int mcm(int a, int b){
         b = temp;
     }
 
-    /*
-    static int MAX = 0; //Potrei definirla in questo modo al posto di scriverla fuori da qualsiasi funzione come ora ma non è importante sapere perchè
+
+    //static int MAX = 0; //Potrei definirla in questo modo al posto di scriverla fuori da qualsiasi funzione come ora ma non è importante sapere perchè
                         //(Variabiile conserva il proprio valore tra un esecuzione e un altra)
-    */
+
 
     MAX = MAX+b; //Ad ogni ricorsione il numero da controllare aumenta del termine più grande
-
-    /* CONTROLLO ERRORI, faccio stampare MAX per vedere che valore assume ogni volta */
-    cout << "Il valore possibile e' " << MAX << endl;
 
     if(MAX%a==0 && MAX%b==0) //Se il numero è divisibile contemporaneamente per A e B termino
         return MAX;
